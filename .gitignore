@@ -1,2 +1,5 @@
+# Ignore self
+.gitignore
+
 # Ignore executable files
 BinarySearch

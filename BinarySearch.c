@@ -112,7 +112,7 @@ int main(int argc, char **argv) {
 
 	// Print the index to the user
 	if (index == -1) {
-		printf("Element does not exist in the give array\n");
+		printf("Element does not exist in the given array\n");
 	} else {
 		printf("%d is located at index %d\n", array[index], index);
 	}

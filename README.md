@@ -14,3 +14,10 @@ A collection of classic computer science algorithms implemented in C.
 
   ### Sample Output:
   ![Sample image depicting the output of the binary search executable](Images/BinarySearchProgramOutput.png)
+
+- Towers of Hanoi
+
+  Allow users to input the number of disks they want to play the Towers of Hanoi game with. Implementation is recursive, the output of each move is printed to the console.
+
+  ### Sample Output:
+  ![Sample image depicting the output of the towers of hanoi executable](Images/TowersOfHanoi.png)

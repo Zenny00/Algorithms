@@ -8,7 +8,7 @@ A collection of classic computer science algorithms implemented in C.
 
 ## Implemented Algorithms
 
-- Binary Search.c
+- Binary Search
 
   Allows users to input the size of an array and fill it with integer elements. The user is then prompted for the value they want to find the index of. Binary search is then used to find the index of the target element. If the element exists, the index is printed on the screen. Otherwise, an error message reports that the value does not exist in the given array.
 
@@ -21,3 +21,9 @@ A collection of classic computer science algorithms implemented in C.
 
   ### Sample Output:
   ![Sample image depicting the output of the towers of hanoi executable](Images/TowersOfHanoi.png)
+
+- Binary Search Tree
+ 
+A simple binary search tree implementation that allows users to add and remove nodes from the tree as they wish. Additionally, the current status of the tree can be displayed via an in-order traversal of the BST. 
+
+![Sample image depicting the output of the binary search tree executable](Images/BST.png)

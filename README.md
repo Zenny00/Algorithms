@@ -24,6 +24,6 @@ A collection of classic computer science algorithms implemented in C.
 
 - Binary Search Tree
  
-A simple binary search tree implementation that allows users to add and remove nodes from the tree as they wish. Additionally, the current status of the tree can be displayed via an in-order traversal of the BST. 
+  A simple binary search tree implementation that allows users to add and remove nodes from the tree as they wish. Additionally, the current status of the tree can be displayed via an in-order traversal of the BST. 
 
-![Sample image depicting the output of the binary search tree executable](Images/BST.png)
+  ![Sample image depicting the output of the binary search tree executable](Images/BST.png)

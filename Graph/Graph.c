@@ -51,3 +51,29 @@ struct Graph *createGraph(struct Edge edges[], int n) {
 
 	return graph;
 }
+
+// Clear the memory allocated for the graph
+void clearGraph(struct Graph *graph) {
+	for (int i = 0; i < MAX_SIZE; i++) {
+		struct Node *ptr = graph->head[i];
+		while (ptr != NULL) {
+			Node *tmp = ptr;
+			ptr = ptr->next;
+			free(tmp);
+		}
+	}
+	free(graph);
+}
+
+// Print the representation of the graph
+void printGraph(struct Graph *graph) {
+	for (int i = 0; i < MAX_SIZE; i++) {
+		struct Node *ptr = graph->head[i];
+		while (ptr != NULL) {
+			printf("(%d -> %d)\t", i, ptr->dest);
+			ptr = ptr->next;
+		}
+
+		printf("\n");
+	}
+}

@@ -53,11 +53,11 @@ struct Graph *createGraph(struct Edge edges[], int n) {
 }
 
 // Clear the memory allocated for the graph
-void clearGraph(struct Graph *graph) {
+void freeGraph(struct Graph *graph) {
 	for (int i = 0; i < MAX_SIZE; i++) {
 		struct Node *ptr = graph->head[i];
 		while (ptr != NULL) {
-			Node *tmp = ptr;
+			struct Node *tmp = ptr;
 			ptr = ptr->next;
 			free(tmp);
 		}
@@ -76,4 +76,24 @@ void printGraph(struct Graph *graph) {
 
 		printf("\n");
 	}
+}
+
+int main(int argc, char **argv) {
+	// (x, y) pair represents an edge traveling from x to y
+	struct Edge edges[] = {
+		{1, 2}, {2, 3}, {3, 1}, {3, 4}, {3, 5}, {4, 2}, {5, 2}, {5, 6}, {6, 7}
+	};
+
+	// Number of edges
+	int n = sizeof(edges)/sizeof(edges[0]);
+
+	// Build the graph
+	struct Graph *graph = createGraph(edges, n);
+
+	// Print the adjacency list
+	printGraph(graph);
+
+	freeGraph(graph); // Free the memory allocated for the graph
+	
+	return 0;
 }

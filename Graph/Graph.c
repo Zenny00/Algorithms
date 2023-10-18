@@ -35,5 +35,19 @@ struct Graph *createGraph(struct Edge edges[], int n) {
 		graph->head[i] = NULL;
 	}
 
-	//
+	// Add edges to the graph
+	for (int i = 0; i < n; i++) {
+		int src = edges[i].src;
+		int dest = edges[i].dest;
+
+		// Allocate space for the new node
+		struct Node *newNode = (struct Node*)malloc(sizeof(struct Node));
+		newNode->dest = dest;
+
+		// Update the graph
+		newNode->next = graph->head[src];
+		graph->head[src] = newNode;
+	}
+
+	return graph;
 }

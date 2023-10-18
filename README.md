@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithms & Data Structures
 A collection of classic computer science algorithms implemented in C.
 
 ## Executing the Code
@@ -27,3 +27,10 @@ A collection of classic computer science algorithms implemented in C.
   A simple binary search tree implementation that allows users to add and remove nodes from the tree as they wish. Additionally, the current status of the tree can be displayed via an in-order traversal of the BST. 
 
   ![Sample image depicting the output of the binary search tree executable](Images/BST.png)
+
+- Graph (Adjacency Matrix)
+
+  A simple graph representation that was implemented using an adjacency matrix. A list of edges is defined and a graph is created using the list. The graph is stored in an array, that keeps track of the nodes, each holding a source and destination.
+
+  ![image](https://github.com/Zenny00/Algorithms/assets/99524099/ba4ebd00-ea50-42cb-ab9d-0eead7cc5f9b)
+

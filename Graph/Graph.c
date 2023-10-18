@@ -29,4 +29,11 @@ struct Edge {
 // Create the graph given the edges
 struct Graph *createGraph(struct Edge edges[], int n) {
 	struct Graph *graph = (struct Graph*)malloc(sizeof(struct Graph)); // Allocate space for the graph
+
+	// Set all array values to NULL
+	for (int i = 0; i < MAX_SIZE; i++) {
+		graph->head[i] = NULL;
+	}
+
+	//
 }
